@@ -1,86 +1,47 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import aboutimg from '../images/about.jpg'
+import Team from './Team'
 const About = () => {
   return (
 
     <>
-    <section className="text-gray-400 bg-gray-900 body-font">
-  <div className="container px-5 py-24 mx-auto flex flex-col">
-    <div className="lg:w-4/6 mx-auto">
-      <div className="rounded-lg h-64 overflow-hidden">
-        <img alt="content" className="object-cover object-center h-full w-full" src="https://dummyimage.com/1200x500"></img>
-      </div>
-      <div className="flex flex-col sm:flex-row mt-10">
-        <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-          <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-800 text-gray-600">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div className="flex flex-col items-center text-center justify-center">
-            <h2 className="font-medium title-font mt-4 text-white text-lg">Phoebe Caulfield</h2>
-            <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-            <p className="text-base text-gray-400">Raclette knausgaard hella meggs normcore williamsburg enamel pin sartorial venmo tbh hot chicken gentrify portland.</p>
+      <section className="text-gray-400 bg-gray-900 body-font">
+        <div className="container px-5 py-10 mx-auto flex flex-wrap">
+          <div className="lg:w-2/3 mx-auto">
+            <div className="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4">
+              <img alt="gallery" className="w-full object-cover h-full object-center block opacity-25 absolute inset-0" src={aboutimg}></img>
+              <div className="text-center relative z-10 w-full">
+                <h2 className="text-2xl text-white font-medium title-font mb-2">About us</h2>
+                <p className="leading-relaxed">How it all started</p>
+                
+              </div>
+            </div>
           </div>
         </div>
-        <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-          <p className="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
-          <a className="text-indigo-400 inline-flex items-center">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
+
+   
+
+
+      
+        <div className="container px-5 py-24 mx-auto">
+          <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="inline-block w-8 h-8 text-gray-500 mb-8" viewBox="0 0 975.036 975.036">
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
             </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section className="text-gray-400 bg-gray-900 body-font">
-  <div className="container px-5 py-24 mx-auto flex flex-wrap">
-    <div className="flex flex-wrap -m-4">
-      <div className="p-4 lg:w-1/2 md:w-full">
-        <div className="flex border-2 rounded-lg border-gray-800 p-8 sm:flex-row flex-col">
-          <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-8 h-8" viewBox="0 0 24 24">
-              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-            </svg>
-          </div>
-          <div className="flex-grow">
-            <h2 className="text-white text-lg title-font font-medium mb-3">Shooting Stars</h2>
-            <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-            <a className="mt-3 text-indigo-400 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
+            <p className="leading-relaxed text-lg">We deal in designing and manufacturing of corporate safety Signages. Signages mainly consist of vinyle printing with a lamination coat over it mounted on a foam sheet. Also we are engaged in Acrylic works which consist of acrylic laser cutting, laser marking as well as laser engraving. For eg. name plates, acrylic folders, acrylic frames, acrylic covers and much more. Digital printing machine prints digital sheets and sticker sheets and art sheets upto 300 gsm and sized accordingly a4, a3, legal, 12 x 18. and lastly we have small machines like laminator, spiral binding, xerox printer and a3 sized paper rim cutter.</p>
+            <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <h2 className="text-white font-medium title-font tracking-wider text-sm">Navnath Khedkar</h2>
+            <p className="text-gray-500">Owner</p>
           </div>
         </div>
-      </div>
-      <div className="p-4 lg:w-1/2 md:w-full">
-        <div className="flex border-2 rounded-lg border-gray-800 p-8 sm:flex-row flex-col">
-          <div className="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-10 h-10" viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-              <circle cx="12" cy="7" r="4"></circle>
-            </svg>
-          </div>
-          <div className="flex-grow">
-            <h2 className="text-white text-lg title-font font-medium mb-3">The Catalyzer</h2>
-            <p className="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-            <Link className="mt-3 text-indigo-400 inline-flex items-center">Learn More
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</>
+      </section>
+
+      
+   
+
+      <Team></Team>
+    </>
 
   )
 }

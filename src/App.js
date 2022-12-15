@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import  Services from './components/Services'
 import About from './components/About';
 import Gallery from './components/Gallery';
+import Notfound from './components/Notfound';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route exact path="/gallery" element={<Gallery></Gallery>}></Route>
         <Route exact path="/about" element={<About></About>}></Route>
 
-
+      <Route exact path='*' element={<Notfound></Notfound>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>

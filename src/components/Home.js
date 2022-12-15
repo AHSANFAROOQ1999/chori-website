@@ -1,24 +1,47 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
+import hero1 from  '../images/hero1.jpg'
+import Clientdet from './Clientdet'
 const Home = () => {
   return (
-    <section className="text-gray-400 bg-gray-900 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Before they sold out
-          
-          </h1>
-          <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-          <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-            <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
-          </div>
-        </div>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"></img>
-        </div>
+    <section className="bg-gray-900 text-white">
+  <div
+    className="mx-auto max-w-screen-xl px-4 py-24 lg:flex lg:h-screen lg:items-center"
+  >
+    <div className="mx-auto max-w-3xl text-center">
+      <h1
+        className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+      >
+        Shree Mahalaxmi 
+
+        <span className="sm:block py-3"> Printers & Signage </span>
+      </h1>
+
+      <p className="mx-auto mt-4 max-w-xl sm:text-2xl sm:leading-relaxed" style={{  color:"orange"}}>
+      A Total Printing Solution
+      </p>
+
+      <div className="mt-8 flex flex-wrap justify-center gap-4">
+        <Link to="contact"
+          className="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+       
+        >
+          Contact us
+        </Link>
+
+        <Link to="services"
+          className="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+         
+        >
+          Services
+        </Link>
       </div>
-    </section>
+    </div>
+  </div>
+  <Clientdet></Clientdet>
+</section>
+
   )
 }
 
