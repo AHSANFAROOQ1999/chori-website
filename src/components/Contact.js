@@ -17,11 +17,11 @@ const Contact = () => {
     fetch(scripturl, { method: 'POST', body: requestBody})
        .then(response => {
         // console.log(response)
-          alert('Success!', response)
+          // alert('Success!', response)
           // submitButton.disabled = false
          })
        .catch(error => {
-       alert('Error!', error.message)
+      //  alert('Error!', error.message)
         //  submitButton.disabled = false
 
        }

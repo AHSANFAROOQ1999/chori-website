@@ -9,12 +9,14 @@ import  Services from './components/Services'
 import About from './components/About';
 import Gallery from './components/Gallery';
 import Notfound from './components/Notfound';
+import Scrolltotop from './components/Scrolltotop';
 
 function App() {
   return (
+
     <Router>
       <Header></Header>
-      
+      <Scrolltotop></Scrolltotop>
       <Routes>
         <Route exact path="" element={<Home></Home>}></Route>
         <Route exact path="/contact" element={<Contact></Contact>}></Route>
