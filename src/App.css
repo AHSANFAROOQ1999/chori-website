@@ -1,12 +1,20 @@
-.abc{
-    font-weight: 900;
-    font-size: 27px;
-    margin: 20px 0px;
-
+.abc {
+  font-weight: 900;
+  font-size: 27px;
+  margin: 20px 0px;
 }
-.abc1{
-    font-weight: 900;
-    font-size: 20px;
-    margin-right: 10px;
-  
+.abc1 {
+  font-weight: 900;
+  font-size: 20px;
+  margin-right: 10px;
 }
+@media (max-width: 480px) {
+  .address_box {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 480px) {
+    .address_box {
+      margin-left: -50px;
+    }
+  }
